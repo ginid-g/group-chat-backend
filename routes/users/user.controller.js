@@ -6,7 +6,7 @@ const adminGuard = require("../../middlewares/admin-guard.middleware");
 
 router.get("/", list);
 
-// router.use(adminGuard);
+router.use(adminGuard);
 router.get("/:id", getById);
 
 router.post("/", create);
